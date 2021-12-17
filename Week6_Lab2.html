@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--Introduction to Web Development
+John Kirby Smits-->
+
+<html lang="en">
+<html>
+<head>
+
+	<title>Page 2</title>
+<meta name="Flex, Box, Page 2" content="HTML, CSS, JavaScript">
+<meta charset="UTF-8">
+<meta name="author" content="Jack">
+<meta name="description" content="Flex Box">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+a:visited {
+  color: pink;
+}
+
+.flex-container {
+	width: 100%
+	flex-wrap: nowrap;
+	display: flex;
+	background-color: DodgerBlue;
+ }
+.flex-container > div {
+	font-family: Courier New, monospace;
+	background-color: #f1f1f1;
+	width: 30%;
+	margin: 10px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+}
+p {
+	font-family: Brush Script MT, Cursive;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Flex Container</h1>
+
+<div class="flex-container">
+	<div>This</div>
+	<div>is</div>
+	<div>an</div>
+</div>
+<div class="flex-container">
+	<div>Example</div>
+	<div>of</div>
+	<div>a</div>
+</div>
+<div class="flex-container">
+	<div>Flex</div>
+	<div>box</div>
+	<div>Resize</div>
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+<nav>
+    <ul>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab1.html#">Page 1</a></li>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab2.html#">Page 2</a></li>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab3.html#">Page 3</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

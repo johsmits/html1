@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!--Introduction to Web Development
+John Kirby Smits-->
+
+<html lang="en">
+
+<head>
+
+	<title>Page 1</title>
+<meta name="Nav, Page 1" content="HTML, CSS, JavaScript">
+<meta charset="UTF-8">
+<meta name="author" content="Jack">
+<meta name="description" content="Navigation Page Lab 1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+a:visited {
+  color: pink;
+}
+
+body {
+ font-family: Courier New, monospace; padding: 30px; text-align: center; background-color: #f33; font-size: 20px
+}
+
+/* Style the header */
+header {
+  background-color: #008;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+  height: 500px;
+  background: #500;
+  padding: 20px;
+  color: grey;
+}
+
+a {color: white; font-family: harlow solid;
+}
+a:hover {
+  background-color: blue;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+	float: left;
+	width: 70%;
+	background-color: #000;
+	height: 500px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #005;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Lab 1</h2>
+<p>This Page is the Navigation Page, I floated the nav box to the right and created links to the other pages in the Lab</p>
+<p>Resize the browser window to see the responsive effect</p>
+
+<header>
+  <h2>Navagation</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab1.html#">Page 1</a></li>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab2.html#">Page 2</a></li>
+      <li><a href="http://labs.dunwoody.edu/smijotv/Lab1/Week6_Lab3.html#">Page 3</a></li>
+    </ul>
+  </nav>
+  <article style="font-family: 'Amatic SC', cursive; padding: 3%; font-size: 2vw; color: white;">
+    <h1>Page 1</h1>
+    <p>To the right is the navigation section. This is how you navigate through the pages.</p>
+    <p>I used external CSS to change the font of the links with the a tag. Hover over the links to intereact, left click to go to that page.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Intro To Web Development - John Kirby Smits - Lab 1</p>
+</footer>
+
+</body>
+</html>

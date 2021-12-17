@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: flex;
+  flex-wrap: nowrap;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 20px;
+  background-color: #001199;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(200, 0, 0, 0.8);
+  border: 1px red;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Container</h1>
+
+<p>A Grid Container consists of grid items arranged in columns and rows</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+</body>
+</html>
